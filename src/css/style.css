@@ -1,8 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-image: url("../images/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'VT323', monospace;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+
+.card {
+    background: #070d12;
+    width: 370px;
+    border: 2px solid #1002d0;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.my-informations {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 1.3rem;
+    background-image: url("../images/fundo-site.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.my-informations img {
+    border-radius: 50px;
+    border: 4px solid #1002d0;
+}
+
+.name {
+    font-size: 1.7rem;
+}
+
+.office {
+    font-size: 1.3rem;
+    color: #b8bbc5;
+}
+
+.content {
+    margin-top: 1rem;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.tabs img {
+    width: 30px;
+}
+
+.tab.selected {
+    background: #262626;
+}
+
+.informations-tabs {
+    background: #262626;
+}
+
+.tab:hover {
+    background: #414141;
+}
+
+.information {
+    min-height: 260px;
+    padding: 1rem;
+    display: none;
+}
+
+.information.selected {
+    display: block;
+}
+
+.sub-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.3rem;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+span {
+    color: #02d08f;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 180px;
+    overflow-y: auto;
+}
+
+.social-networks li a {
+    display: block;
+    width: 256px;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-networks li a:hover {
+    opacity: 0.8;
+}
+
+.curriculum {
+    background: #06c185;
+}
+
+.linkedin {
+    background: #1d87bd;
+}
+
+.github {
+    background: #545454;
 }
 
